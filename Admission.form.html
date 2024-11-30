@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Admission Form</title>
+        <style>
+            h1{ 
+                text-align: center;
+                text-decoration: underline;
+                text-shadow: 1px 2px 2px rgba(81, 3, 3, 0.808);
+                
+            }
+            h3{
+                text-align: center; 
+                text-decoration: underline;
+                text-shadow: 1px 1px 2px rgba(106, 99, 2, 0.808);
+            }
+            .admtn_form{
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+        <h1>Admission form of Vidyateja Engineering College</h1>
+        
+        <form action="main.clone.html"  method="post" style="font-weight: 600;">
+            <fieldset style="border: 2px solid black;">
+
+        <!----------------------------Personal Details------------------------------->
+
+                <fieldset style="border:1px solid rgba(255, 0, 0, 0.136);" >
+                    <h3>--- Personal Details ---</h3>
+                    <div class="admtn_form">
+                        Enter Full Name : <input type="text" placeholder="First Name" required> <input type="text" placeholder="Middle Name"> <input type="text" placeholder="Last Name">
+                        <br><br>
+                        Gender: Male<input type="radio" name="r" checked>,
+                        Female<input type="radio" name="r">,
+                        Other<input type="radio" name="r">
+                        <br><br>
+                        Cast: GEN<input type="radio" name="r1" checked> ,
+                        Sc<input type="radio" name="r1">
+                        ST<input type="radio" name="r1">
+                        OBC<input type="radio" name="r1">
+                        Other<input type="radio" name="r1">
+                        <br><br>
+                        Enter DOB: <input type="date">
+                        <br><br>
+                        Enter Current age: <input type="text" placeholder="Year"><input type="text" placeholder="Month">
+                        <br><br>
+                        Father's Name :<input type="text" value="Shree ">
+                        <br><br>
+                        Mather's Name :<input type="text" value="Shmt ">
+                        <br><br>
+                        Gurdian Name :<input type="text">
+                        <br><br>
+                        Gurdian Occupation: 
+                         Salaried<input type="radio" name="r2" checked>,
+                         Business<input type="radio" name="r2">,
+                         Self Employed<input type="radio" name="r2">,
+                         Labour<input type="radio" name="r2">,
+                         Other<input type="radio" name="r2">
+                         <br>
+                         (if Other, mention :<input type="text">)
+                        <br><br>
+                        Contry:<input type="text" placeholder="Contry Name">   State:<input type="text" placeholder="State Name">
+                        <br><br>
+                        Permanent Address :
+                        <br>
+                         <textarea rows="2" cols="25" maxlength="120"></textarea>
+                        <br><br>
+                        Current Address :
+                        <br>
+                         <textarea rows="2" cols="25" maxlength="120"></textarea>
+                        <br><br>
+                        Phone Number :<input type="text" maxlength="14" value="+91 ">
+                        <br><br>
+                        Upload Photo:<input type="file">
+                        <br><br>
+                        <input type="checkbox" required> I here by Inform you that all mention above details are currect.
+    
+                    </div>
+                </fieldset>
+
+
+        <!----------------------------- Qualification -------------------->
+                    
+                   <fieldset style="border:1px solid rgba(255, 0, 0, 0.136);">
+                    <h3>--- Qualification Details ---</h3>
+                    <div class="admtn_form">
+                        <br>
+                        Last Qualification :
+                        <select>
+                            <option>10th</option>
+                            <option>12th</option>
+                            <option>Politechnic</option>
+                            <option>Graduation</option>
+                            <option>Masters</option>
+                        </select>
+                        <br><br>
+                        Passing Year :<input type="date"> 
+                        <br><br>
+                        Percentage :<input type="text" maxlength="120">
+                        <br><br>
+                        Roll :<input type="text"> Number :<input type="text"> 
+                        <br><br>
+            
+                        <!-- Password :<input type="password" placeholder="max 10 digit" maxlength="10" required> -->
+            
+                        Bord:<input type="text">
+                        <br><br>
+                        <input type="checkbox" required> I here by Inform you that all mention above details are currect.
+    
+                    </div>
+                </fieldset>
+
+
+        <!----------------------------- Course -------------------->
+                    
+                <fieldset style="border:1px solid rgba(255, 0, 0, 0.136);">
+                    <h3>--- Select Your Course ---</h3>
+                    <div class="admtn_form">
+                        <br>
+                        Choose Your Course :
+                        <select>
+                            <option>Agorithms Flowcharts</option>
+                            <option>Expressions and Python</option>
+                            <option>Web Publishing & Browsing</option>
+                            <option>Photo Editor</option>
+                            <option>Masters</option>
+                        </select>
+                        <br><br>
+                        Enter Date & Time :<input type="datetime-local">
+                        <br><br>
+                        <input type="checkbox" required> <input type="submit" value="Submit"> <input type="reset" value="Reset">
+
+                    </div>
+
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>
