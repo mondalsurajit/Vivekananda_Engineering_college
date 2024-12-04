@@ -44,11 +44,6 @@ html,body{
     padding: 5px;
     text-shadow: 1px 2px 2px rgb(73, 10, 2);
     font-weight: 600;
-
-}
-.top_head .logo_left span  .fa-solid {
-    color: rgba(60, 50, 245, 0.915);
-    font-size: 4.5em;
 }
 
      /*----Heading Latter------ */
@@ -101,7 +96,6 @@ html,body{
     text-shadow: 1px 2px 2px rgb(73, 10, 2);
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-color:yellow; */
 }
 .top_head .logo_right i{
     padding: 5px;
@@ -112,6 +106,62 @@ html,body{
     color: rgba(60, 50, 245, 0.915);
     font-size: 5.8em;
     text-shadow: 2px 3px 3px rgb(2, 2, 98);
+}
+
+@media(max-width: 700px){
+    .top_head .logo_left{
+        height: 145px;
+        width: 510px;
+        margin: 30px 2px 10px 2px ;
+    }
+    .top_head .logo_left span{
+        display: block;
+        padding: 5px 30px 5px 5px;
+    }    
+    .top_head .logo_left span img{
+        width: 38px;
+        height: 50px;
+    }
+    .top_head .logo_left span p{
+        font-size: 8.5px;
+        padding: 0;
+    }    
+    
+    
+    .top_head .head_nam{
+        width: 920px;
+        margin: 5px 10px 10px 1px;
+        padding: 2px;
+    }
+    .top_head .head_nam h1 {
+        font-size: 22px; 
+    }
+    .top_head p{
+        font-size: 9.5px;
+        padding-top: 5px;
+    }
+
+
+    .top_head .logo_right{
+        height: 145px;
+        width: 510px;
+        margin: 30px 2px 10px 5px;
+    }
+    .top_head .logo_right span{
+        padding: 5px 2px 5px 10px;
+    
+    }
+    .top_head .logo_right p{
+        font-size: 8.5px;
+        padding: 2px;
+    }
+    .top_head .logo_right i{
+        padding: 5px;
+    }
+    .top_head .logo_right  .fa-solid{
+        font-size: 2.8em;
+    }
+    
 }
 
 
@@ -238,6 +288,9 @@ nav .close_bar, .open_bar{
 .angle_right{
     float: right;
 }
+@media(max-width: 700px){    
+}
+
 
   /*-------------------------------------- body Image --------------------------------*/
   .body_img{
@@ -255,8 +308,6 @@ nav .close_bar, .open_bar{
         background-image: url(cllg.1.jpg);
         background-size: cover;
         background-position: center;
-    
-
     }
 }
 
@@ -293,7 +344,10 @@ nav .close_bar, .open_bar{
     margin-top: 1.0vh;
     font-weight: 400;
     font-size: 20px;
-    text-shadow: 1px 3px 2px rgb(2, 2, 40);
+    font-weight: 600;
+    backdrop-filter: blur(3px);
+    color: #d0daf7;
+    text-shadow: -1px 3px 2px rgb(37, 1, 1);
 }
 #pg_1{
     flex-direction: column;
@@ -342,9 +396,54 @@ nav .close_bar, .open_bar{
 }
 
 
+@media(max-width: 700px){    
+    .body_img{
+        padding-top: 118px;
+    }
+    #bck_img{
+        margin-top: 70px
+    }
+    
+    #pg_1{
+        height: 62vh;
+        width: 100%;
+        top:50%;
+        left:50%;
+    }
+    #pg_1 h1{
+        font-size: 22px;
+        font-weight: 800;
+        backdrop-filter: blur(5px);
+    }
+    #pg_1 p{
+        font-size: 15px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .Vw{
+        background-color: rgba(47, 79, 107, 0.634);
+        border-radius: 10px;
+        padding: 2px;
+    }
+    #a_click{
+        font-weight: 900;
+        font-size: 16px;
+    }
+    .moving{
+        width: 345px;
+        font-size:15px; 
+        margin-top: 280px;
+    }
+    .moving strong{
+        text-transform: uppercase;
+        padding: 5px;
+    }
+
+}
+
 /* ----------------------------Course --------------------------*/
 .st1{
-    /* background-image: repeating-linear-gradient(rgba(188, 207, 248, 0.351),rgba(141, 238, 255, 0.252) ,rgba(161, 183, 163, 0.308)); */
+    background-image: repeating-linear-gradient(rgba(188, 207, 248, 0.27),rgba(141, 238, 255, 0.252) ,rgba(198, 211, 199, 0.27));
     margin-bottom: 3px;
     padding-bottom: 50px;
 }
@@ -396,7 +495,7 @@ nav .close_bar, .open_bar{
     background-color: #c7c6c65f;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 5;
+    /* margin-bottom: 5; */
     box-sizing: border-box;
     box-shadow: 1px 2px 2px rgba(28, 42, 1, 0.541);
 }
@@ -433,7 +532,8 @@ nav .close_bar, .open_bar{
 }
 .Course_nam p a{
     /* color: blue; */
-    border: 1px solid gray;
+    border: 0px solid gray;
+    box-shadow: 0px 1px 5px rgba(43, 43, 43, 0.496);
     border-radius: 4px;
     padding: 2px;
     font-weight: 600;
@@ -445,10 +545,9 @@ nav .close_bar, .open_bar{
 }
 
 
- /* --------------------------------- course Duration & Fee ---------------------*/
+ /* -------------- course Duration & Fee ---------------------*/
  .Du_Fee{
     width: 100%;
-    /* margin: auto; */
     text-align: center;
     padding-top: 10px;
     padding-bottom: 80px;
@@ -534,7 +633,6 @@ nav .close_bar, .open_bar{
     font-weight: 600;
     font-size: 28px;
     text-shadow: 2px 2px 2px rgb(250, 200, 15);
-    
 }
 
 .c1 i{
@@ -549,7 +647,7 @@ nav .close_bar, .open_bar{
     opacity: 1;
 }
 
- /* ---------------------------------College Area---------------------*/
+ /* ----------------College Area---------------------*/
 .area{
     color: black;
     margin: 10px;
@@ -684,19 +782,141 @@ nav .close_bar, .open_bar{
     margin-left: -500%;
 }
 
+@media(max-width: 700px){
+    .st1{
+        height: 416vh;
+    }
+    .Course{
+        padding: 5px;
+    }
+    .Course h2{
+        margin-top: 20px;
+        padding: 3px;
+        font-size: 20px;
+    }
+    .Course h3{
+    margin: 1px;
+    padding-top: 2px;
+    font-size: 12px;
+    padding-bottom: 13px;
+    }
+
+
+    .all_course{
+        display: block;
+        margin: 3px;
+        padding: 28px;
+    }
+    .all_course h3{
+        font-size: 15px;
+        margin: 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .Course_nam{
+        border-radius: 5px;
+        padding: 18px;
+        margin-bottom: 25px;
+    }
+    .Course_nam p{
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 2px;
+    }
+    .Course_nam p a{
+        font-size: 13px;
+    }
+ /* --- course Duration & Fee ----*/
+
+    .Du_Fee{
+        padding-top: 0;
+        padding-bottom: 27px;
+    }
+    .Du_Fee h2{
+        font-size: 17px;
+    }
+    .Du_Fee p{
+        font-size: 13px;
+        padding: 5px;
+        padding-bottom: 30px;
+    } 
+    .Du_Fee_course{
+        width: 80%;
+        margin-left: 38px;
+    }
+    .c1{
+        width: 30vw;
+        height: 50vh;
+    }
+    .c1 h2 {
+        font-size: 12px;   
+    }
+    .c1:active{
+        width: 75vw;
+    }
+    .c1:hover h2{
+        transform: scale(1.1);
+    }
+    .c1 h2 i{
+        font-size: 14px;
+    }
+/* ---College Area---- */
+
+.area{
+    margin: 1px 5px 2px 16px;
+}
+.area .heading{
+    margin: 5px;
+    text-align: center;
+}
+.area .p1{
+    margin: 10px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+ .vk_cllg{
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 50px;
+}
+
+.vk_cllg .para{
+    margin: 8px;
+    width: 285px;
+    height: 53vh;
+    padding: 15px;
+}
+.para p{
+    padding: 5px;
+    font-size: 12px;
+}
+.para p strong{
+    font-size: 15px;
+}
+
+.vk_cllg .cllg_Phto{
+    width: 90%;
+    padding-top: 10px;
+    margin: 15px 5px 2px 14px;
+    align-items: center;
+    justify-content: center;
+}
+.images img{
+    height: 320px;
+}
+}
 
  /* --------------------------------- Other information ---------------------*/
  .other_info{
     margin: 2px 0 1px 0;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 1px;
     background-color: rgba(205, 196, 196, 0.629);
-    height: 33vh;
+    height: 23vh;
     align-items: center;
 }
-
 .information{
-    /* background-color: rgba(67, 73, 74, 0.281); */
     height: 250px;
     margin: 20px;
     align-items: center;
@@ -719,56 +939,33 @@ nav .close_bar, .open_bar{
     font-size: 20px;
     font-weight: 800;
 }
-.logo{
-    text-align: center;
-    margin-top: 40px;
+.information p i{
+    color: rgb(173, 67, 6);
+    font-weight: 800;
 }
 
-
-.information .logo a{
-    box-shadow: 2px 1px 3px yellow;
-    background-color: black;
-    padding: 7px;
-    margin-right: 15px;
-    border-radius: 8px 2px 8px 4px;
-    transition: 0.3s;
-}
-
-
-.information .logo a:active {
-    box-shadow: 2px 0 5px 5px rgb(246, 89, 72);
-}
-
-.information .logo a:hover{
-    border-bottom: 3px solid #2694fb;
-}
-
-
-/* 
-.transfprm{
-    display: flex;
-    height: 150px;
-    width: 150px;
-    margin: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-}
-@keyframes trnsfmImg{
-    from{
-        transform:trnslateX(1px);
+ @media(max-width: 700px){
+    .other_info{
+        padding-top: 2px;
+        height: 33vh;
     }
-    to{
-        transform:trnslateX(-60px);
+    .information{
+        margin: 15px;
+     }
+    .information h2 {
+        font-size: 22px;
+        padding-bottom: 5px;
+     }
+    .information p{
+        text-align: justify;
+        font-size: 11px;
+        padding: 2px;
     }
-}
-.transfprm img{
-    padding: 20px;
-    animation: trnsfmImg all 0.1s ease-in 0.3s infinite;
-
-}
- */
-
+    .information p strong{
+        font-size: 12px;
+        font-weight: 600;
+    }
+ }
 
  /* ----------------------------------- Footer -----------------------------------*/
  footer{
@@ -855,7 +1052,7 @@ nav .close_bar, .open_bar{
 }
 .contact a{
     color: rgb(68, 121, 254);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     padding: 2px;
 }
@@ -874,7 +1071,7 @@ nav .close_bar, .open_bar{
     margin: 20px;
 }
 .s1 p{
-    text-align: justify;
+    text-align: center;
     font-style: italic;
 }
 
@@ -917,12 +1114,120 @@ nav .close_bar, .open_bar{
 }
 
 .s2 .n1 .a1 p{
-    color: rgba(0, 0, 255, 0.777);
+    color: rgba(109, 109, 251, 0.978);
+    text-shadow: 0 2px 2px rgba(230, 117, 17, 0.779);
     padding: 5PX;
     font-weight: 600;
-
 }
 
+@media(max-width: 700px){
+    footer{
+        padding-bottom: 15px;
+    }
+    .footer_head{
+        display: flex;
+        padding: 2px;
+        margin: 5px;
+    }
+    .instraction h1{
+        padding-top: 8px;
+        font-size: 14px;
+    }
+    .instraction h3{
+        margin: 10px 2px 2px 0;
+        font-size: 11px;
+    }
+    .instraction ul{
+        padding: 2px;
+        margin: 2px 1px 0px 12px ;
+    }
+    .instraction ul li{
+        padding: 1px;
+        font-size: 10px;
+    }
+    
+    
+    .addrs{
+        margin: 25px 1px 10px 2px;
+        padding: 10px 4px 30px 2px;
+        text-align: left;
+    }
+    .addrs h1{
+        text-align: left;
+        padding-bottom: 12px;
+        font-size: 14px;
+    }
+    .addrs h3{
+        text-align: left;
+        font-size: 10px;
+    }
+    .addrs h3 .fa-solid{
+        font-size: 1.4em;
+        color: #e82626;
+        text-shadow: 1px 2px 3px rgb(160, 200, 249);
+    }
+    .addrs h3 strong{
+        font-size: 10px;
+    }
+    .addrs p{
+        font-size: 10px;
+        padding-left: 8px;
+    }
+    
+    
+    .contact{
+        margin: 5px 0 8px 1px ;
+    }
+    .contact h1{
+        padding:5px;
+        font-size: 14px;
+    }
+    .contact h4{
+        text-align: right;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    .contact h4 .fa-solid{
+        font-size: 1.0em;
+        padding-right: 2px;
+    }
+    .contact a{
+        font-size: 9px;
+        padding: 0px;
+    }
+    .contact h4 p{
+        padding: 1px;
+        font-size: 9px;
+    }
+        
+    .s1 p{
+        font-size: 12px;
+    }    
+
+    .s2{
+        margin: 5px;
+    }
+    .s2 h2{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .s2 .n1{
+        padding:5px;
+        margin: 5px;
+    }
+    .s2 .n1 .a1 {
+        margin: 1px;
+        padding: 2px;
+    }
+    .s2 .n1 .a1 .fa-brands{
+        padding: 5px;
+        font-size: 1.1em;
+    }
+    .s2 .n1 .a1 p{
+        padding: 5PX;
+        font-size: 13px;
+    }
+}
 
 
  /* ----------------Aout College---------- */
@@ -971,6 +1276,35 @@ nav .close_bar, .open_bar{
     box-shadow: 3px 3px 10px rgb(42, 2, 2) ;
 }
 
+@media(max-width :700px){
+    .about_Cllg{
+        margin-top: 180px;
+    }
+    .about_Cllg h1{
+        padding: 18px;
+        font-size: 21px;
+    }
+    .about_Cllg .cll_1{
+        margin: 5px;
+        padding: 10px;
+    }
+    .about_Cllg .cll_1 p{
+        font-size: 12px;
+        padding: 12px;
+    }
+    .cll_1 p strong{
+        font-size:14px;
+    }
+    .cll_1 .cll_img{
+        padding: 2px;
+    }
+    .cll_1 .cll_img img{
+        margin:0 3px 1px 3px;
+        width: 500px;
+        height: 230px;
+        box-shadow: 2px 3px 5px rgb(42, 2, 2) ;
+    }
+}
 
  /* ----------------Aout Course---------- */
  .about_Course{
@@ -1015,6 +1349,7 @@ nav .close_bar, .open_bar{
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px; 
+    box-shadow: 2px 3px 6px rgba(72, 2, 2, 0.878);
  }
 
  .crs_1 .crs_images img{
@@ -1052,8 +1387,73 @@ nav .close_bar, .open_bar{
     border-bottom: 2px solid rgb(31, 26, 26);
  }
 
+ @media(max-width:700px){
+    .about_Course{
+        margin-top: 180px;
+        padding-bottom: 5px;
+     }
+     .about_Course h1{
+        padding: 16px;
+        font-size: 20px;
+     }
+     .about_Course .crs_1{
+        display: block;
+        margin: 3px;
+        padding: 20px;
+        height: 620px;
+        margin-bottom: 6px;
+     }
+     .crs_1 p{
+        text-align: justify;
+        width: 300px;
+        margin: 4px ;
+        padding:6px;
+        font-size: 12px;
+        border-bottom: none;
+     }
+     .crs_1 p strong{
+        font-size: 17px;
+        padding: 0;
+     }
+     .crs_1 .crs_images{
+        margin: 20px;
+        width: 75vw;
+        height: 40vh;
+        border-radius: 7px; 
+     }
+    
+     .crs_1 .crs_images img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* margin:20px; */
+        transition:all 0.8s ease;
+     }
+     .crs_images img:hover{
+        transform: scale(1.2); 
+     }
+    
+     .info{
+        padding: 30px;
+        height: 54vh;
+     }
+     .info p{
+        font-size: 12px;
+        padding:5px;
+     }
+     .info p b{
+        font-size: 18px;
+     }
+     hr{
+        width: 69vw;
+     }
+ }
+
  /* ---------------------------Log In-------------------------------- */
 
+.login_box{
+    
+}
 
  .body_img .login_pg{
     border: 1px solid white;
@@ -1062,6 +1462,7 @@ nav .close_bar, .open_bar{
     width: 360px;
     /* background-color: rgb(55, 55, 51); */
     /* z-index: 2; */
+    
     padding: 30px;
     align-items: center;
     justify-content: center;
@@ -1126,6 +1527,10 @@ nav .close_bar, .open_bar{
     background-color: #7005fcf0;
     cursor: pointer;
  } 
+
+@media(max-width:700px){
+    
+}
 
  /* ---------------------------New Notice body-------------------------------- */
 
@@ -1206,22 +1611,17 @@ nav .close_bar, .open_bar{
 .notice_page .pg_2{
     color: black;
 }
-.pg_2 h1{
-    color: black;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 7px;
-}
 
 .pg_2 p{
     text-align: center;
     padding:10px 25px  5px  25px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(123, 252, 230);
 }
 .pg_2 p a{
     color: yellow;
+    font-weight: 600;
 }
 
 .ntc_1{
@@ -1248,7 +1648,54 @@ nav .close_bar, .open_bar{
     animation: a_link  ease-in-out 1s infinite ;
 }
 
-
+@media(max-width:700px){
+    .ntc_img{
+        margin-top: 180px;
+    }
+    #p_1{
+        padding-top: 80px;
+        height: 30vh;
+    }
+    #p_1 h1{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .moving_2{
+        width: 335px;
+        backdrop-filter: blur(3px);
+        margin-top: 55px;
+        margin-left: 12px;
+        padding: 2px;
+        font-size:16px; 
+    }
+    .moving_2 a{
+        font-size: 18px;
+    }
+ 
+    /* -----New Notice Page--- */
+    .notice_page{
+        height: 230vh;
+        padding-bottom: 180px;
+    }
+    .pg_2 p{
+        text-align: justify;
+        padding:25px;
+        font-size: 16px;
+    }
+    .pg_2 p a{
+        color: yellow;
+    }
+    
+    .ntc_1{
+        margin: 2px;
+    }
+    .ntc_1 p{
+        font-size: 14px;
+    }
+    .ntc_1 p a{
+        font-size: 16px;
+    }
+}
 
 
 /* -----------------------------Previous Notice------------------------------ */
@@ -1263,7 +1710,7 @@ nav .close_bar, .open_bar{
     color: black;
     padding-top: 20px;
 }
-.notice .ntc_1{
+.notice .ntc_2{
     align-items: center;
     justify-content: center;
     background-color: #0371e7e6; 
@@ -1272,7 +1719,7 @@ nav .close_bar, .open_bar{
     margin: 90px ;
     padding: 8px;
 }
-.notice .ntc_1 h3{
+.notice .ntc_2 h3{
     color: black;
     text-align: center;
     justify-content: center;
@@ -1280,7 +1727,7 @@ nav .close_bar, .open_bar{
     border-bottom:1px solid rgb(255, 123, 0);
 }
 
-.notice .ntc_1 p{
+.notice .ntc_2 p{
     text-align: center;
     padding: 5px;
     font-size: 18px;
@@ -1300,7 +1747,7 @@ nav .close_bar, .open_bar{
 
     }
 }
-.ntc_1 p a{
+.ntc_2 p a{
     font-size: 22px;
     font-style: italic;
     padding: 2px;
@@ -1309,4 +1756,44 @@ nav .close_bar, .open_bar{
 }
 
 
-
+@media(max-width :700px){
+    .notice{
+        margin-top: 180px;
+        height: 90vh;
+    }
+    .notice h2{
+        padding-top: 38px;
+    }
+    .notice .ntc_2{
+        align-items: center;
+        justify-content: center;
+        height: 88vh;
+        width: 20em;
+        margin: 9px ;
+        padding: 10px;
+    }
+    .notice .ntc_2 h3{
+        color: black;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom:1px solid rgb(255, 123, 0);
+    }
+    
+    .notice .ntc_2 p{
+        text-align: center;
+        padding: 5px;
+        font-size: 18px;
+        font-family: Arial;
+        color: antiquewhite;
+    }
+    
+    .ntc_2 p a{
+        font-size: 22px;
+        font-style: italic;
+        padding: 2px;
+        color: red;
+        animation: a1_link ease-in-out 1s infinite ;
+    }
+    
+}
