@@ -33,7 +33,8 @@
 
             <nav>
                 <div class="menu_bar" id="menu_link">
-                    <span class="close_bar"> <i class="fa-solid fa-circle-xmark" onclick="close_menu"></i></span>
+
+                    <i class="fa-regular fa-circle-xmark" id="icn_CloseBar" onclick="closed_menu()"></i>
                     <ul>  
                         <li class="active">
                             <a id="home" href="Final.project.html">Home</a>
@@ -71,11 +72,22 @@
                             <input placeholder="Search" id="srch_txt">
                             <button id="srch">Search</button>
                     </ul>
-                        <!-- <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span> -->
                 </div>
-                <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span>
+                <i class="fa-solid fa-bars" id="icn_MenuBar" onclick="open_menu()"></i>
             </nav>
         </section>
+
+
+        <script>
+            var menu_link = document.getElementById("menu_link");
+            function open_menu(){
+                menu_link.style.left = "0";
+            }
+            function closed_menu(){
+                menu_link.style.left = "-290px";
+            }
+        </script>
+
         <!-- /*--------------------------------------Main body Image --------------------------------*/ -->
         <section class="body_img">
             <div id="bck_img">
@@ -94,8 +106,6 @@
                 </div>
             </div>
         </section>  
-
-
         <!---------------------------------COURSE-------------------- -->
         <div class="st1">
     
@@ -199,7 +209,7 @@
                         <p>
                             <strong>Library :</strong> 
                             college library is a central hub for information resources that supports
-                            and is considered the backbone of college education.<a href="#_block"> Library Room</a>It provides a quiet space for students.
+                            and backbone of college education.<a href="#_block"> Library Room</a>It provides a quiet space for students.
                         </p>
                         <p>
                             <strong>Aditorium :</strong>

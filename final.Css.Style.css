@@ -180,6 +180,15 @@ nav{
     position: absolute;
     top: 190px;
 }
+
+ #icn_CloseBar{
+    display: none;
+}
+ #icn_MenuBar{
+    display: none;
+}
+
+
 .menu_bar ul{
     display: inline-flex;
     list-style: none;
@@ -288,7 +297,83 @@ nav .close_bar, .open_bar{
 .angle_right{
     float: right;
 }
+
+
 @media(max-width: 700px){    
+    nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+    }
+      .menu_bar{
+        text-align: right;
+        display: block;
+        position: absolute;
+        top: 140px;
+        left:-290px;
+        height: 398px;
+        width: 200px;
+        /* background-color: rgba(4, 183, 227, 0.351); */
+        background-image: repeating-linear-gradient(rgb(7, 7, 178),rgba(78, 185, 193, 0.595),rgba(96, 126, 248, 0.37));
+
+        z-index: 2;
+        transition: 2.0s;
+    }
+     #icn_CloseBar{
+        display: block;
+        font-size: 25px;
+        margin: 5px;
+        color: #860202;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    #icn_CloseBar :active{
+        /* color: wheat; */
+        /* background-color: yellow; */
+        /* transform: scale(1.2); */
+    }
+
+    
+     #icn_MenuBar{
+        display: block;
+        font-size: 25px;
+        margin: 145px 8px ;
+        color: #0637bf;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    #icn_MenuBar :active{
+        /* color: wheat; */
+        /* display: none; */
+    }
+    .menu_bar ul{
+        display: block;
+        list-style: none;
+        font-weight: bolder;
+        text-shadow: 3px 4px 4px black;
+        padding: 10px 2px;
+        text-align: center;
+    }
+    
+    .menu_bar ul li {
+        width: 120px;
+        height: 28px;
+        margin: 10px;
+    
+        background-color:rgb(5, 125, 180);
+        box-shadow: 2px 3px 2px rgb(66, 5, 5);
+        border-radius: 8px;
+        font-size: 15px;
+        box-sizing: initial;
+        transition: all 0.5s ease 0.2s;
+        border: 1px solid;
+        /* border-color: red green blue yellow; */
+    }
+    .menu_bar ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
 }
 
 
@@ -398,7 +483,7 @@ nav .close_bar, .open_bar{
 
 @media(max-width: 700px){    
     .body_img{
-        padding-top: 118px;
+        padding-top: 110px;
     }
     #bck_img{
         margin-top: 70px
@@ -495,7 +580,6 @@ nav .close_bar, .open_bar{
     background-color: #c7c6c65f;
     border-radius: 5px;
     padding: 10px;
-    /* margin-bottom: 5; */
     box-sizing: border-box;
     box-shadow: 1px 2px 2px rgba(28, 42, 1, 0.541);
 }
@@ -531,7 +615,6 @@ nav .close_bar, .open_bar{
     }
 }
 .Course_nam p a{
-    /* color: blue; */
     border: 0px solid gray;
     box-shadow: 0px 1px 5px rgba(43, 43, 43, 0.496);
     border-radius: 4px;
@@ -678,7 +761,6 @@ nav .close_bar, .open_bar{
     justify-content: center;
     align-items: center;
     padding-top: 70px;
-    /* padding-bottom: 50px; */
 }
 
 .vk_cllg .para{
@@ -909,7 +991,7 @@ nav .close_bar, .open_bar{
 
  /* --------------------------------- Other information ---------------------*/
  .other_info{
-    margin: 2px 0 1px 0;
+    margin: 2px 0 2px 0;
     padding-top: 12px;
     padding-bottom: 1px;
     background-color: rgba(205, 196, 196, 0.629);
@@ -946,8 +1028,8 @@ nav .close_bar, .open_bar{
 
  @media(max-width: 700px){
     .other_info{
-        padding-top: 2px;
-        height: 33vh;
+    margin: 2px 0 1px 0;
+    height: 34vh;
     }
     .information{
         margin: 15px;
@@ -1017,7 +1099,7 @@ nav .close_bar, .open_bar{
 .addrs h3 .fa-solid{
     font-size: 1.8em;
     color: #e82626;
-    text-shadow: 1px 2px 3px rgb(160, 200, 249);
+    text-shadow: 2.5px 2px 3px rgb(160, 200, 249);
 }
 .addrs h3 strong{
     font-size: 22px;
@@ -1048,7 +1130,7 @@ nav .close_bar, .open_bar{
     color: #1130dae0;
     font-size: 1.5em;
     padding-right: 5px;
-    text-shadow: 0px 1px 2px rgb(220, 255, 154);
+    text-shadow: 3px 2px 3px rgb(220, 255, 154);
 }
 .contact a{
     color: rgb(68, 121, 254);
@@ -1098,9 +1180,10 @@ nav .close_bar, .open_bar{
     font-size: 2.4em;
     transition: all 0.5s ;
     color: none;
+    text-shadow: 3px 2px 4px rgb(191, 16, 4);
 }
 .s2 .n1 .a1 .fa-brands:hover{
-    text-shadow: -2px 2px 3px rgba(248, 223, 134, 0.851);
+    text-shadow: -2px 2px 3px rgba(109, 162, 252, 0.851);
     transform: scale(1.3);
 }
 .s2 .n1 .a1 .fa-brands:active{
@@ -1452,18 +1535,16 @@ nav .close_bar, .open_bar{
  /* ---------------------------Log In-------------------------------- */
 
 .login_box{
-    
+    margin:10px 10px 10px 1100px;
 }
 
  .body_img .login_pg{
     border: 1px solid white;
     border-radius: 6px;
-    height: 350px;
+    height: 357px;
     width: 360px;
-    /* background-color: rgb(55, 55, 51); */
-    /* z-index: 2; */
-    
-    padding: 30px;
+    position: absolute;
+    padding: 25px;
     align-items: center;
     justify-content: center;
     float: right;
@@ -1471,7 +1552,6 @@ nav .close_bar, .open_bar{
     margin: 50px 290px 0 0;
     backdrop-filter: blur(5px);
     background-color: #9bb4f83b;
-    /* display: none; */
  }
  .body_img .login_pg .form_1{
     text-align: center;
@@ -1480,12 +1560,11 @@ nav .close_bar, .open_bar{
     font-size: 32px;
     text-align: center;
     color: #ecf8f8;
-    text-shadow: 2px 1px 3px rgb(15, 16, 15);
     padding: 6px;
+    text-shadow: 2px 1px 3px rgb(15, 16, 15);
     border-bottom:2px solid rgb(7, 111, 139);
  }
  .login_pg .lg_1{
-    /* border: 1px solid blue; */
     height: 29vh;
     width: 20vw;
     padding: 18px;
@@ -1493,7 +1572,6 @@ nav .close_bar, .open_bar{
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    /* color: #fdf7f7fb; */
     text-shadow: 0 2px 2px black;
  }
  .login_pg .lg_1 input{
@@ -1503,14 +1581,15 @@ nav .close_bar, .open_bar{
     padding-left:30px;
     border-radius: 3px;
     border-color: rgba(85, 0, 255, 0) rgba(255, 0, 0, 0) rgb(12, 13, 12) rgba(255, 0, 0, 0);
-    /* backdrop-filter: blur(5px); */
     background-color: #f2f2f597;
  }
  .login_pg .lg_1 i{
     padding: 5px;
+    font-size: 30px;
  }
  .login_pg .lg_1 p{
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-right: 50px;
     text-align: center;
  }
  .login_pg .lg_1 p button{
@@ -1522,24 +1601,57 @@ nav .close_bar, .open_bar{
     transition:all 0.5s;
     font-size: 18px;
  }
- .login_pg .lg_1 p button :active{
-    transform: scale(1.5);
-    background-color: #7005fcf0;
-    cursor: pointer;
- } 
+ .lg_2:active{
+    transform: scale(1.2);
+    background-color: #9e5603d9;
+} 
 
 @media(max-width:700px){
+    .login_box{
+        margin:1px 1px 10px 48px;
+    }
     
+     .body_img .login_pg{
+        height: 237px;
+        width: 215px;
+        padding: 25px;
+        margin: 15px 290px 0 0;
+     }
+     .login_pg h2{
+        font-size: 20px;
+        padding: 1px;
+     }
+     .login_pg .lg_1{
+        height: 20vh;
+        width: 100vw;
+        padding: 5px;
+        font-size: 14px;
+     }
+     .login_pg .lg_1 input{
+        font-size: 12px;
+        margin: 7px;
+     }
+     .login_pg .lg_1 i{
+        padding: 1px;
+        font-size: 19px;
+     }
+     .login_pg .lg_1 p{
+        padding-left: 82px;
+        text-align: justify;
+     }
+     .login_pg .lg_1 p button{
+        padding: 5px;
+        font-size: 12px;
+     }
 }
 
- /* ---------------------------New Notice body-------------------------------- */
+ /* ---------------------------New Notice Head-------------------------------- */
 
 .ntc_img{
     background-image:url(library.img.2.jpeg);
     background-size: cover;
     background-position: center;
-    /* width: 90vw; */
-    margin-top: 268px;
+    margin-top: 263px;
 }
 
 #p_1{
@@ -1553,9 +1665,9 @@ nav .close_bar, .open_bar{
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    /* font-weight: 800; */
-    color: #f2e964de;
-    text-shadow: 3px 3px 3px rgb(2, 42, 60);
+    font-weight: 900;
+    color: #f42707fa;
+    text-shadow: 3px -2px 3px rgb(2, 30, 114);
     text-decoration: underline;
 }
 
@@ -1566,11 +1678,11 @@ nav .close_bar, .open_bar{
     margin-top: 100px;
     margin-left: 480px;
     position: absolute; 
-    font-size:22px; 
+    font-size:20px; 
     text-transform: capitalize; 
     text-shadow: 1px 2px 3px rgb(11, 2, 94);
     font-style: italic;
-    color: rgb(47, 244, 198); 
+    color: rgb(200, 253, 240); 
     font-weight: 700;
     
     text-align: center;
@@ -1588,7 +1700,7 @@ nav .close_bar, .open_bar{
     color: rgb(198, 9, 9);
     backdrop-filter: blur(5px);
     font-weight: 900;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 3px;
     animation: moving_link ease-in-out 1s infinite ;
 
@@ -1601,26 +1713,20 @@ nav .close_bar, .open_bar{
  /* ------------New Notice Page--------------- */
 
 .notice_page{
-    height: 75vh;
-    width: 100%;
-    padding-bottom: 200px;
-    color: black;
-    /* padding-bottom: 200px; */
+    height: 70vh;
+    padding: 40px;
+    margin-bottom: 2px;
     background-image: repeating-linear-gradient(rgba(0, 187, 255, 0.733),rgb(15, 14, 14));
 }
-.notice_page .pg_2{
-    color: black;
-}
-
 .pg_2 p{
     text-align: center;
     padding:10px 25px  5px  25px;
     font-size: 20px;
     font-weight: 500;
-    color: rgb(123, 252, 230);
+    text-align: justify;
 }
 .pg_2 p a{
-    color: yellow;
+    color: rgba(255, 217, 0, 0.905);
     font-weight: 600;
 }
 
@@ -1674,12 +1780,13 @@ nav .close_bar, .open_bar{
  
     /* -----New Notice Page--- */
     .notice_page{
-        height: 230vh;
+        height: 215vh;
         padding-bottom: 180px;
+        background-image: repeating-linear-gradient(rgba(4, 140, 189, 0.822),rgb(15, 14, 14));
     }
     .pg_2 p{
         text-align: justify;
-        padding:25px;
+        padding:8px;
         font-size: 16px;
     }
     .pg_2 p a{
@@ -1701,35 +1808,43 @@ nav .close_bar, .open_bar{
 /* -----------------------------Previous Notice------------------------------ */
 
 .notice{
-    margin-top: 269px;
-    height: 90vh;
-    background-color: rgba(69, 248, 248, 0.584);
+    margin-top: 262px;
+    margin-bottom: 2px;
+    height: 94vh;
+    /* background-color: rgba(69, 248, 248, 0.584); */
+    background-image: repeating-linear-gradient(rgba(60, 202, 253, 0.966),rgba(15, 14, 14, 0.884));
+
 }
 .notice h2{
     text-align: center;
     color: black;
     padding-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
 }
 .notice .ntc_2{
     align-items: center;
     justify-content: center;
-    background-color: #0371e7e6; 
-    height: 73vh;
+    background-color: #0476f09b; 
+    height: 80vh;
     width: 95em;
-    margin: 90px ;
-    padding: 8px;
+    margin: 60px 20px 0 160px;
+    padding: 5px;
+    
 }
 .notice .ntc_2 h3{
     color: black;
     text-align: center;
+    font-size: 22px;
     justify-content: center;
-    padding-bottom: 10px;
+    padding: 15px;
     border-bottom:1px solid rgb(255, 123, 0);
 }
 
 .notice .ntc_2 p{
-    text-align: center;
-    padding: 5px;
+    text-align: left;
+    padding: 7px;
     font-size: 18px;
     font-family: Arial;
     color: antiquewhite;
@@ -1759,37 +1874,37 @@ nav .close_bar, .open_bar{
 @media(max-width :700px){
     .notice{
         margin-top: 180px;
-        height: 90vh;
+        margin-bottom: 2px;
+        height: 100vh;
+        padding-bottom: 800px;
     }
     .notice h2{
-        padding-top: 38px;
+        padding: 25px;
+        font-size: 21px;
     }
     .notice .ntc_2{
         align-items: center;
         justify-content: center;
-        height: 88vh;
+        height: 200vh;
         width: 20em;
         margin: 9px ;
         padding: 10px;
     }
     .notice .ntc_2 h3{
-        color: black;
-        text-align: center;
-        justify-content: center;
         padding-bottom: 10px;
-        border-bottom:1px solid rgb(255, 123, 0);
+        font-size: 15px;
     }
     
     .notice .ntc_2 p{
-        text-align: center;
+        /* text-align: center; */
         padding: 5px;
-        font-size: 18px;
+        font-size: 13px;
         font-family: Arial;
         color: antiquewhite;
     }
     
     .ntc_2 p a{
-        font-size: 22px;
+        font-size: 14px;
         font-style: italic;
         padding: 2px;
         color: red;
