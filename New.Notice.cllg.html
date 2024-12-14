@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>New Notice</title>
+        <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="final.Css.Style.css">
-     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body> 
 
-    </head> 
-    <body>
-        
         <section>
             <div class="top_head">
                 <div class="logo_left">
                     <span>
                         <img src="ashok.stamv.2.png">
-                        <p class="text_1">The Lion of Ashoka is the capital or head. </p>
+                        <p class="text_1">The Lion of Ashoka is<br> the capital or head. </p>
                     </span>    
                 </div>
                 <div class="head_nam">
                     <h1>Vidyateja Engineering College</h1>
                     <p>The futuristic involving very modern technology</p>
                     <p>and environment provided in heare</p>
-                </div> 
+                </div>
                 <div class="logo_right">
                     <span>
                         <i class="fa-duotone fa-solid fa-book-open-reader"></i>
@@ -33,52 +31,67 @@
             </div>
     <!----------------------------------- Menu Bar --------------------- -->
 
-            <nav>
-                <div class="menu_bar" id="menu_link">
-                    <span class="close_bar"> <i class="fa-solid fa-circle-xmark" onclick="close_menu"></i></span>
-                    <ul>  
-                        <li class="active">
-                            <a id="home" href="Final.project.html">Home</a>
-                        </li>
-                        <li><a href="#_block">About</a>
-                            <div class="sub_menu1">
-                                <ul>
-                                    <li>
-                                        <a href="About.Cllge.html">College</a>
-                                    </li>
-                                    <li>
-                                        <a href="About.Crse.html">Course</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="Registration.Form.html">Registration</a>
-                        </li>
-                        <li>
-                            <a href="Admission.form.html">Admission</a>
-                        </li>
-                        <li>
-                            <a href="login.pg.html" class="login_1">Log In</a>
-                        </li>
-                        <li><a href="#_block">Notice</a>
-                            <div class="sub_menu1">
-                                <ul>
-                                    <li><a href="New.Notice.cllg.html">New Notice</a></li>
-                                    <li><a href="Previous.Notice.cllg.html">Previous Notice</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                            <!-- <form action="#" method="get"> -->
-                            <input placeholder="Search" id="srch_txt">
-                            <button id="srch">Search</button>
-                    </ul>
-                        <!-- <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span> -->
-                </div>
-                <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span>
-            </nav>
-        </section> 
+            <div class="mn1">
 
+                <nav>
+                    <div class="menu_bar" id="menu_link">
+
+                        <i class="fa-regular fa-circle-xmark" id="icn_CloseBar" onclick="closed_menu()"></i>
+                        <ul>  
+                            <li class="active">
+                                <a id="home" href="Final.project.html">Home</a>
+                            </li>
+                            <li><a href="#_block">About</a>
+                                <div class="sub_menu1">
+                                    <ul>
+                                        <li>
+                                            <a href="About.Cllge.html">College</a>
+                                        </li>
+                                        <li>
+                                            <a href="About.Crse.html">Course</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="Registration.Form.html">Registration</a>
+                            </li>
+                            <li>
+                                <a href="Admission.form.html">Admission</a>
+                            </li>
+                            <li>
+                                <a href="login.pg.html" class="login_1">Log In</a>
+                            </li>
+                            <li><a href="#_block">Notice</a>
+                                <div class="sub_menu1">
+                                    <ul>
+                                        <li><a href="New.Notice.cllg.html">New Notice</a></li>
+                                        <li><a href="Previous.Notice.cllg.html">Previous Notice</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" id="icn_MenuBar" onclick="open_menu()"></i>
+                </nav>
+
+                <div class="search1">
+                    <input placeholder="Search" id="srch_txt">
+                    <button id="srch">Search</button>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            var menu_link = document.getElementById("menu_link");
+            function open_menu(){
+                menu_link.style.left = "0";
+            }
+            function closed_menu(){
+                menu_link.style.left = "-290px";
+            }
+        </script>
     <!--------------------------------------------Notice body ----------------- -->
         <section class="ntc_img">
                 <div id="p_1">
@@ -204,11 +217,8 @@
                 </div>
     
             </section>
-    
-
+        
     </footer>
-
-
 
 </body>
 </html>

@@ -1,82 +1,97 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head>
-    <title>About Course</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="final.Css.Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <section>
-        <div class="top_head">
-            <div class="logo_left">
-                <span>
-                    <img src="ashok.stamv.2.png">
-                    <p class="text_1">The Lion of Ashoka is the capital or head. </p>
-                </span>    
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="final.Css.Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body> 
+
+        <section>
+            <div class="top_head">
+                <div class="logo_left">
+                    <span>
+                        <img src="ashok.stamv.2.png">
+                        <p class="text_1">The Lion of Ashoka is<br> the capital or head. </p>
+                    </span>    
+                </div>
+                <div class="head_nam">
+                    <h1>Vidyateja Engineering College</h1>
+                    <p>The futuristic involving very modern technology</p>
+                    <p>and environment provided in heare</p>
+                </div>
+                <div class="logo_right">
+                    <span>
+                        <i class="fa-duotone fa-solid fa-book-open-reader"></i>
+                        <p>The Education is about learing skills and knowledge.</p>
+                        
+                    </span>
+                </div>
             </div>
-            <div class="head_nam">
-                <h1>Vidyateja Engineering College</h1>
-                <p>The futuristic involving very modern technology</p>
-                <p>and environment provided in heare</p>
-            </div>
-            <div class="logo_right">
-                <span>
-                    <i class="fa-duotone fa-solid fa-book-open-reader"></i>
-                    <p>The Education is about learing skills and knowledge.</p>
-                    
-                </span>
-            </div>
-        </div>
 <!----------------------------------- Menu Bar --------------------- -->
 
-        <nav>
-            <div class="menu_bar" id="menu_link">
-                <span class="close_bar"> <i class="fa-solid fa-circle-xmark" onclick="close_menu"></i></span>
-                <ul>  
-                    <li class="active">
-                        <a id="home" href="Final.project.html">Home</a>
-                    </li>
-                    <li><a href="#_block">About</a>
-                        <div class="sub_menu1">
-                            <ul>
-                                <li>
-                                    <a href="About.Cllge.html">College</a>
-                                </li>
-                                <li>
-                                    <a href="About.Crse.html">Course</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="Registration.Form.html">Registration</a>
-                    </li>
-                    <li>
-                        <a href="Admission.form.html">Admission</a>
-                    </li>
-                    <li>
-                        <a href="login.pg.html" class="login_1">Log In</a>
-                    </li>
-                    <li><a href="#_block">Notice</a>
-                        <div class="sub_menu1">
-                            <ul>
-                                <li><a href="New.Notice.cllg.html">New Notice</a></li>
-                                <li><a href="Previous.Notice.cllg.html">Previous Notice</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                        <!-- <form action="#" method="get"> -->
-                        <input placeholder="Search" id="srch_txt">
-                        <button id="srch">Search</button>
-                </ul>
-                    <!-- <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span> -->
-            </div>
-            <span class="open_bar"><i class="fa-solid fa-bars" onclick="open_menu"></i></span>
-        </nav>
-    </section>
+            <div class="mn1">
 
+                <nav>
+                    <div class="menu_bar" id="menu_link">
+
+                        <i class="fa-regular fa-circle-xmark" id="icn_CloseBar" onclick="closed_menu()"></i>
+                        <ul>  
+                            <li class="active">
+                                <a id="home" href="Final.project.html">Home</a>
+                            </li>
+                            <li><a href="#_block">About</a>
+                                <div class="sub_menu1">
+                                    <ul>
+                                        <li>
+                                            <a href="About.Cllge.html">College</a>
+                                        </li>
+                                        <li>
+                                            <a href="About.Crse.html">Course</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="Registration.Form.html">Registration</a>
+                            </li>
+                            <li>
+                                <a href="Admission.form.html">Admission</a>
+                            </li>
+                            <li>
+                                <a href="login.pg.html" class="login_1">Log In</a>
+                            </li>
+                            <li><a href="#_block">Notice</a>
+                                <div class="sub_menu1">
+                                    <ul>
+                                        <li><a href="New.Notice.cllg.html">New Notice</a></li>
+                                        <li><a href="Previous.Notice.cllg.html">Previous Notice</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" id="icn_MenuBar" onclick="open_menu()"></i>
+                </nav>
+
+                <div class="search1">
+                    <input placeholder="Search" id="srch_txt">
+                    <button id="srch">Search</button>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            var menu_link = document.getElementById("menu_link");
+            function open_menu(){
+                menu_link.style.left = "0";
+            }
+            function closed_menu(){
+                menu_link.style.left = "-290px";
+            }
+        </script>
 <!-- ---------------------About Coures body---------------- -->
 
 <section class="about_Course">
@@ -148,90 +163,86 @@
         <hr>
 </div>
 
-<!-- -------------------------------------  Footer------------------------------------------------ -->
+        <!----------------------------------- Footer --------------------- -->
+        <footer>
+            <section class="footer_head">
 
-<footer>
-    <section class="footer_head">
-
-        <div class="instraction">
-            <h1><span>---Instruction---</span></h1>
-            <h3>Improve Learning</h3>
-            <ul>
-                <li>College instruction can refer to the practices and methods</li>
-                <li>Some best practices for teaching college students include.</li>
-            </ul>
-
-            <h3>Content to learning </h3>
-            <ul>
-                <li>Content to learning outcomes Make sure assignments</li>
-                <li>Explain to students what they're doing, why they're doing it</li>
-            </ul>
-        </div>
+                <div class="instraction">
+                    <h1><span>---Instruction---</span></h1>
+                    <h3>Improve Learning</h3>
+                    <ul>
+                        <li>College instruction can refer to the practices and methods</li>
+                        <li>Some best practices for teaching college students include.</li>
+                    </ul>
         
-        <div class="addrs">
-            
-            <h1>---Address---</h1>
-            <h3><i class="fa-solid fa-location-dot"></i> : <strong>The Vidyateja Engineering College</strong></h3>
-            <p>407/16 AJC Boss road Ganga Pur coloni <br> EP Block N.24 Porgonas KOLKATA <br> West Bengle 700081</p>
-        </div>
-
-        <div class="contact">
-            <h1>---Contact Us---</h1>
-
-            <h4><i class="fa-solid fa-envelope"></i> : <p><a href="#_block"> Vidyateja.Engi123@gmail.com</a><br>
-                <a href="#_block"> VTEC.Engineering@gmail.com</a></p> </h4>
-            
-            <h4><i class="fa-solid fa-phone"></i> : <p> 180 5876 4659, 180 5876 4659</p> </h4>
-
-            <h4><i class="fa-solid fa-mobile"></i> : <p> 8989898989,  7767676767</p> </h4>
-
-        </div>
-
-    </section>
-
+                    <h3>Content to learning </h3>
+                    <ul>
+                        <li>Content to learning outcomes Make sure assignments</li>
+                        <li>Explain to students what they're doing, why they're doing it</li>
+                    </ul>
+                </div>
+                
+                <div class="addrs">
+                    
+                    <h1>---Address---</h1>
+                    <h3><i class="fa-solid fa-location-dot"></i> : <strong>The Vidyateja Engineering College</strong></h3>
+                    <p>407/16 AJC Boss road Ganga Pur coloni <br> EP Block N.24 Porgonas KOLKATA <br> West Bengle 700081</p>
+                </div>
     
-    <section class="footer_buttom">
-        <div class="s1">
-            <p>Sharing the purpose of activities: Explain to students what, and how the skills they're learning will help them Some best practices for learning will teaching grow. 
-                Revisiting.<br> Some best practices for teaching college on learning outcomes at the beginning of the semesterstudents and assessments are relevant and aligned with the course learning outcomes. 
-            </p>
-        </div>
+                <div class="contact">
+                    <h1>---Contact Us---</h1>
+    
+                    <h4><i class="fa-solid fa-envelope"></i> : <p><a href="#_block"> Vidyateja.Engi123@gmail.com</a><br>
+                        <a href="#_block"> VTEC.Engineering@gmail.com</a></p> </h4>
+                    
+                    <h4><i class="fa-solid fa-phone"></i> : <p> 180 5876 4659, 180 5876 4659</p> </h4>
+
+                    <h4><i class="fa-solid fa-mobile"></i> : <p> 8989898989,  7767676767</p> </h4>
+
+                </div>
+    
+            </section>
+
+            
+            <section class="footer_buttom">
+                <div class="s1">
+                    <p>Sharing the purpose of activities: Explain to students what, and how the skills they're learning will help them Some best practices for learning will teaching grow. 
+                        Revisiting.<br> Some best practices for teaching college on learning outcomes at the beginning of the semesterstudents and assessments are relevant and aligned with the course learning outcomes. 
+                    </p>
+                </div>
+                
+                <div class="s2">
+                    <h2>Follow us</h2>
+                    <div class="n1">
         
-        <div class="s2">
-            <h2>Follow us</h2>
-            <div class="n1">
+                        <div class="a1">
+                            <a href="https://twitter.com" class="fa-brands fa-twitter" ></a>
+                            <p>twitter.com</p>
 
-                <div class="a1">
-                    <a href="https://twitter.com" class="fa-brands fa-twitter" ></a>
-                    <p>twitter.com</p>
-
+                        </div>
+        
+                        <div class="a1">
+                            <a href="https://www.facebook.com" class="fa-brands fa-facebook"></a>
+                            <p>facebook.com</p>
+                            
+                        </div>
+        
+                        <div class="a1">
+                            <a href="https://www.instagram.com" class="fa-brands fa-square-instagram"></a>
+                            <p>instagram.com</p>
+                            
+                        </div>
+        
+                        <div class="a1">
+                            <a href="https://www.youtube.com" class="fa-brands fa-youtube"></a>
+                            <p>youtube.com</p>              
+                        </div>
+                    </div>
                 </div>
-
-                <div class="a1">
-                    <a href="https://www.facebook.com" class="fa-brands fa-facebook"></a>
-                    <p>facebook.com</p>
-                    
-                </div>
-
-                <div class="a1">
-                    <a href="https://www.instagram.com" class="fa-brands fa-square-instagram"></a>
-                    <p>instagram.com</p>
-                    
-                </div>
-
-                <div class="a1">
-                    <a href="https://www.youtube.com" class="fa-brands fa-youtube"></a>
-                    <p>youtube.com</p>              
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-</footer>
-
-
+    
+            </section>
+        
+    </footer>
 
 </body>
 </html>
