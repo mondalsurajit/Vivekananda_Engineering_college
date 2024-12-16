@@ -966,8 +966,8 @@ nav .close_bar, .open_bar{
     .c1 h2 {
         font-size: 12px;   
     }
-    .c1:active{
-        width: 75vw;
+    .c1:hover{
+        width: 95vw;
     }
     .c1:hover h2{
         transform: scale(1.1);
